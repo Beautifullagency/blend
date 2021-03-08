@@ -102,15 +102,43 @@ button:focus {
   color: aqua;
 }
 
-/*ACORDEON*/
-.colapse-fix {
-  background: #fff;
+/*SECCION 1 - ACORDEON*/
+.sec-1 {
+  background-image: url('../img/svg/logo-b-background.svg');
+  background-repeat: no-repeat;
+  background-position: 10% 100%;
+  background-size: 11%;
 }
+body.dark .sec-1 {
+  background-image: url('../img/svg/logo-b-background-dark.svg');
+}
+
+
+
+/*SECCION 2 - ACORDEON*/
+.colapse-fix {
+  background: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+body.dark .colapse-fix {
+  background: #1c2128;
+  transition: 0.7s ease all;
+}
+.colapse-fix h3,
+.colapse-fix p {
+  color: #1c2128;
+}
+body.dark .colapse-fix h3,
+body.dark .colapse-fix p {
+  color: #f2f2f2 !important;
+  transition: 0.7s ease all;
+}
+
 @media only screen and (min-width: 426px) {
   .colapse-col {
     display: flex;
   }
-  
+
   .colapse-side-rigth {
     position: absolute;
     background: url("../img/jpg/colapse-background.jpg");
@@ -119,7 +147,14 @@ button:focus {
     height: 100%;
     width: 100%;
     z-index: 1;
+    border-radius: 0 10px 10px 0;
   }
+  body.dark .colapse-side-rigth {
+    background: url("../img/jpg/colapse-background-dark.jpg");
+    background-position: 50px -40px;
+    transition: 0.7s ease all;
+  }
+
   .colapse-side-left {
     position: absolute;
     background: linear-gradient(90deg, #e1daed 15%, #97cce9);
@@ -163,12 +198,13 @@ button:focus {
   }
   body.dark .colapse-icon {
     color: #f2f2f2;
+    transition: 0.7s ease all;
   }
   body.dark .toggle-colapse {
     color: #14171d;
+    transition: 0.7s ease all;
   }
 }
-
 @media only screen and (max-width: 425px) {
   .colapse-fix {
     padding-top: 20px;
@@ -200,7 +236,7 @@ button:focus {
     height: 40px;
     width: 90%;
     z-index: 2;
-    transition: 1s ease all;    
+    transition: 1s ease all;
     border-radius: 0 0px 10px 10px;
   }
   .colapse-side-left-active {
@@ -222,7 +258,7 @@ button:focus {
   .colapse-icon {
     margin-right: auto;
     margin-left: auto;
-    background-image: url("../img/svg/arrow-colapse-dark-down.svg");   
+    background-image: url("../img/svg/arrow-colapse-dark-down.svg");
     background-repeat: no-repeat;
     background-size: 30px 40px;
     width: 30px;
@@ -233,6 +269,78 @@ button:focus {
     transform: rotateX(180deg);
   }
 }
+
+/*SECCION 3  CAROUSEL*/
+.sec-3 {  
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-image: url("../img/svg/logo-blend-background.svg");
+  background-size: contain;
+}
+body.dark .sec-3 {  
+  background-image: url("../img/svg/logo-blend-background-dark.svg");
+  transition: 0.7s ease all;
+}
+.owl3-inner {
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  height: 100%;
+  width: 85%;
+}
+#owl3 .owl-carousel{
+  width: 85% !important;
+}
+.owl3-inner div {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  height: 120px;
+  bottom: 0;
+  color: #fff;
+}
+.owl3-inner img {
+  border-radius: 8px !important;
+}
+/*SECCION 4*/
+.btn-sec4 {
+ padding: 5px 50px 5px 50px ;
+ border-radius: 100px;
+ font-weight: 900;
+}
+.sec-4 div div h2 {
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(2vw, 20px);
+  color: #000000;
+  transition: 0.7s ease all;
+}
+.sec-4 div div p{
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(2vw, 16px);
+  color: #000000;
+  transition: 0.7s ease all;
+}
+body.dark .sec-4 div div h2 {
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(2vw, 20px);
+  color: #ffffff;
+  transition: 0.7s ease all;
+}
+body.dark .sec-4 div div p{
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: min(2vw, 16px);
+  color: #ffffff;
+  transition: 0.7s ease all;
+}
+
+
+
 /*FUENTES Y TAMAÑOS*/
 /*ESCRITORIO Y TABLET*/
 @media only screen and (min-width: 425px) {
