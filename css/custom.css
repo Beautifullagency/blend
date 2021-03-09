@@ -258,6 +258,27 @@ body.dark .colapse-fix p {
   }
 }
 
+.row-side {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+
+.side-left {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: inherit;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s linear;
+}
+.side-left-active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.7s linear;
+}
+
 /*SECCION 3  CAROUSEL*/
 .sec-3 {
   background-repeat: no-repeat;
@@ -376,7 +397,7 @@ body.dark .sec-4 div div p {
   }
 }
 .transparent {
-  background: transparent  !important;
+  background: transparent !important;
 }
 .gal {
   margin-bottom: 20px;
@@ -384,7 +405,7 @@ body.dark .sec-4 div div p {
   margin-right: 15px;
   border-radius: 6px 6px 0 0;
   background-color: #fff;
-  text-align:center
+  text-align: center;
 }
 
 .img-gal {
@@ -398,9 +419,9 @@ body.dark .sec-4 div div p {
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #0000005d inset;
 }
 .form-control {
@@ -424,7 +445,6 @@ input:-webkit-autofill:active  {
   box-shadow: none;
 }
 
-
 .col-form2 {
   height: 100%;
   margin-top: 0;
@@ -437,22 +457,22 @@ input:-webkit-autofill:active  {
   color: #f2f2f2;
 }
 
-.icon-mail  {
+.icon-mail {
   height: 25px;
   width: 25px;
   margin-right: 20px;
   background-size: 100%;
   background-repeat: no-repeat;
-  background: url('../img/svg/icon-mail.svg');  
+  background: url("../img/svg/icon-mail.svg");
   background-size: 25px 25px;
 }
-.icon-loc  {
+.icon-loc {
   height: 30px;
   width: 25px;
   margin-right: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  background: url('../img/svg/icon-location.svg');  
+  background: url("../img/svg/icon-location.svg");
   background-size: 25px 30px;
 }
 
@@ -462,10 +482,9 @@ input:-webkit-autofill:active  {
   margin-right: 20px;
   background-size: contain;
   background-repeat: no-repeat;
-  background: url('../img/svg/icon-phone.svg');  
+  background: url("../img/svg/icon-phone.svg");
   background-size: 25px 30px;
 }
-
 
 .home-intro {
   background: url("../img/jpg/footer-background.jpg");
