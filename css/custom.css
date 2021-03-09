@@ -338,6 +338,15 @@ body.dark .sec-4 div div p{
   color: #ffffff;
   transition: 0.7s ease all;
 }
+@media only screen and (max-width: 425px) {
+
+
+
+
+  
+}
+
+/*SECCION 5*/
 
 
 
@@ -360,4 +369,17 @@ body.dark .sec-4 div div p{
 .col-form2 {
   height: 100%;
   margin-top: 0;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.home-intro {
+  background: url('../img/jpg/footer-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -957,14 +957,28 @@ html .btnd-degr {
   /*border-color: #0088cc #0088cc #006699;*/
   border: none;
   color: #000000;
+  box-shadow: none;
+  transition: 0.7s ease all;
+  
 }
 
 html .btnd-degr:hover,
 html .btnd-degr.hover {
-  background-color: #fff;
+  background: #fff ;
   border-color: #ebebeb #ebebeb #dedede;
   color: #000000;
+  transition: 0.7s ease all;
 }
+
+body.dark .btnd-degr:hover,
+body.dark .btnd-degr.hover {
+  background: #1C2128 !important;
+  border-color: #ebebeb #ebebeb #dedede;
+  color: #fff;
+  transition: 0.7s ease all;
+}
+
+
 
 html .btnd-degr:focus,
 html .btnd-degr.focus {
