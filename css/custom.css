@@ -358,6 +358,10 @@ body.dark .sec-4 div div p{
 }
 
 /*GALERIA DE IMAGENES*/
+.gal {
+  
+  border-radius: 6px 6px 0 0;
+}
 
 .img-gal {
   border-radius: 6px 6px 0 0;
