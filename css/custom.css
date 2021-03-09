@@ -104,16 +104,14 @@ button:focus {
 
 /*SECCION 1 - ACORDEON*/
 .sec-1 {
-  background-image: url('../img/svg/logo-b-background.svg');
+  background-image: url("../img/svg/logo-b-background.svg");
   background-repeat: no-repeat;
   background-position: 10% 100%;
   background-size: 11%;
 }
 body.dark .sec-1 {
-  background-image: url('../img/svg/logo-b-background-dark.svg');
+  background-image: url("../img/svg/logo-b-background-dark.svg");
 }
-
-
 
 /*SECCION 2 - ACORDEON*/
 .colapse-fix {
@@ -271,13 +269,13 @@ body.dark .colapse-fix p {
 }
 
 /*SECCION 3  CAROUSEL*/
-.sec-3 {  
+.sec-3 {
   background-repeat: no-repeat;
   background-position: 100% center;
   background-image: url("../img/svg/logo-blend-background.svg");
   background-size: contain;
 }
-body.dark .sec-3 {  
+body.dark .sec-3 {
   background-image: url("../img/svg/logo-blend-background-dark.svg");
   transition: 0.7s ease all;
 }
@@ -288,7 +286,7 @@ body.dark .sec-3 {
   height: 100%;
   width: 85%;
 }
-#owl3 .owl-carousel{
+#owl3 .owl-carousel {
   width: 85% !important;
 }
 .owl3-inner div {
@@ -306,49 +304,73 @@ body.dark .sec-3 {
 }
 /*SECCION 4*/
 .btn-sec4 {
- padding: 5px 50px 5px 50px ;
- border-radius: 100px;
- font-weight: 900;
+  padding: 5px 50px 5px 50px;
+  border-radius: 100px;
+  font-weight: 900;
 }
 .sec-4 div div h2 {
   font-weight: 900;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: min(2vw, 20px);
   color: #000000;
   transition: 0.7s ease all;
 }
-.sec-4 div div p{
+.sec-4 div div p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: min(2vw, 16px);
   color: #000000;
   transition: 0.7s ease all;
 }
 body.dark .sec-4 div div h2 {
   font-weight: 900;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: min(2vw, 20px);
   color: #ffffff;
   transition: 0.7s ease all;
 }
-body.dark .sec-4 div div p{
+body.dark .sec-4 div div p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: min(2vw, 16px);
   color: #ffffff;
   transition: 0.7s ease all;
 }
 @media only screen and (max-width: 425px) {
-
-
-
-
-  
+  .btn-sec4 {
+    padding: 5px 50px 5px 50px;
+    border-radius: 100px;
+    font-weight: 900;
+  }
+  .sec-4 div div h2 {
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    font-size: min(6vw, 20px);
+    color: #000000;
+    transition: 0.7s ease all;
+  }
+  .sec-4 div div p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: min(4vw, 12px);
+    color: #000000;
+    transition: 0.7s ease all;
+  }
 }
 
 /*SECCION 5*/
 
-
+@media only screen and (max-width: 425px) {
+  .btn-sec5 {
+    height: 50px !important;
+    width: 95% !important;
+    padding: 0 !important;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-size: min(4vw, 12px);
+  }
+}
 
 /*FUENTES Y TAMAÑOS*/
 /*ESCRITORIO Y TABLET*/
@@ -358,9 +380,19 @@ body.dark .sec-4 div div p{
 }
 
 /*GALERIA DE IMAGENES*/
+@media only screen and (max-width: 425px) {
+  .gal {
+    width: 41%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+  }
+}
+
 .gal {
-  
   border-radius: 6px 6px 0 0;
+  background-color: #fff;
+  text-align:center
 }
 
 .img-gal {
@@ -375,15 +407,10 @@ body.dark .sec-4 div div p{
   margin-top: 0;
 }
 
-
-
-
-
-
 /*FOOTER*/
 
 .home-intro {
-  background: url('../img/jpg/footer-background.jpg');
+  background: url("../img/jpg/footer-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
