@@ -12,7 +12,7 @@ html .scroll-to-top {
   background: #404040;
   border-radius: 4px 4px 0 0;
   bottom: 0;
-  color: #FFF;
+  color: #fff;
   display: block;
   height: 9px;
   opacity: 0;
@@ -26,7 +26,7 @@ html .scroll-to-top {
   font-size: 0.8em;
 }
 .visible {
-  visibility: visible!important;
+  visibility: visible !important;
 }
 .max-w {
   max-width: 1240px;
@@ -46,6 +46,10 @@ button:focus {
   outline: none;
 }
 
+.space {
+  margin-top: 7em;
+}
+
 /*MENU*/
 
 .logo-nav {
@@ -57,6 +61,17 @@ button:focus {
     width: 40% !important;
   }
 }
+/*VIDEO*/
+.vid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
 /*SWITCH*/
 .nav-switch-container {
   position: relative;
@@ -116,6 +131,8 @@ button:focus {
 }
 
 .chevron-down {
+  position: absolute;
+  bottom: 0;
   margin-right: auto;
   margin-left: auto;
   background-image: url("../img/svg/arrow-colapse-dark.svg");
@@ -124,7 +141,8 @@ button:focus {
   background-repeat: no-repeat;
   background-size: 35px 25px;
   width: 35px;
-  height: 40px;  
+  height: 40px;
+  z-index: 1;
 }
 
 /*SECCION 1 - ACORDEON*/
@@ -132,7 +150,7 @@ button:focus {
   background-image: url("../img/svg/logo-b-background.svg");
   background-repeat: no-repeat;
   background-position: 10% 100%;
-  background-size: 13%;
+  background-size: 10%;
 }
 body.dark .sec-1 {
   background-image: url("../img/svg/logo-b-background-dark.svg");
@@ -140,7 +158,7 @@ body.dark .sec-1 {
 
 /*SECCION 2 - ACORDEON*/
 .colapse-fix {
-  background: #f2f2f2;
+  background: #fff;
   border-radius: 10px 0 0 10px;
 }
 body.dark .colapse-fix {
@@ -245,8 +263,8 @@ body.dark .colapse-fix p {
     position: relative;
     background: url("../img/jpg/colapse-background-mobil.jpg");
     background-size: cover;
-    background-position: 0px 0;
-    height: 300px;
+    background-position: 0px 2px;
+    height: 540px;
     width: 90%;
     z-index: 1;
     border-radius: 0 0px 10px 10px;
@@ -263,7 +281,7 @@ body.dark .colapse-fix p {
     border-radius: 0 0px 10px 10px;
   }
   .colapse-side-left-active {
-    height: 301px;
+    height: 541px;
   }
   .toggle-colapse {
     position: relative;
@@ -335,17 +353,21 @@ body.dark .sec-3 {
   width: 85% !important;
 }
 .owl3-inner div {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   text-align: center;
   position: absolute;
-  width: 80%;
-  height: 120px;
+  width: 90%;
+  height: 110px;
   bottom: 0;
   color: #fff;
 }
 .owl3-inner img {
   border-radius: 8px !important;
+}
+.owl3-inner p {
+  line-height: 1.5;
+  font-weight: 200;
 }
 /*SECCION 4*/
 .btn-sec4 {
@@ -383,7 +405,7 @@ body.dark .sec-4 div div p {
 }
 @media only screen and (max-width: 425px) {
   .btn-sec4 {
-    padding: 5px 50px 5px 50px;
+    padding: 5px 20px 5px 20px;
     border-radius: 100px;
     font-weight: 900;
   }
@@ -397,14 +419,19 @@ body.dark .sec-4 div div p {
   .sec-4 div div p {
     margin-top: 30px;
     font-weight: 400;
+    line-height: 1.5;
     font-family: "Open Sans", sans-serif;
-    font-size: min(4vw, 12px);
+    font-size: min(4vw, 11px);
     color: #000000;
     transition: 0.7s ease all;
   }
 }
 
 /*SECCION 5*/
+.services{
+  padding-right: 5px;
+    padding-left: 5px;
+}
 
 @media only screen and (max-width: 425px) {
   .btn-sec5 {
@@ -416,8 +443,6 @@ body.dark .sec-4 div div p {
     font-size: min(4vw, 12px);
   }
 }
-
-
 
 /*GALERIA DE IMAGENES*/
 @media only screen and (max-width: 425px) {
@@ -432,13 +457,16 @@ body.dark .sec-4 div div p {
   margin-bottom: 20px;
   margin-left: 15px;
   margin-right: 15px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
   background-color: #fff;
   text-align: center;
 }
 
 .img-gal {
   border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+.gal p {
   width: 100%;
 }
 
@@ -531,10 +559,9 @@ input:-webkit-autofill:active {
   margin-top: auto;
   margin-bottom: auto;
   width: 100%;
-  height:80%;
-filter: invert(100);
+  height: 80%;
+  filter: invert(100);
 }
-
 
 /*FUENTES Y TAMAÑOS*/
 /*ESCRITORIO Y TABLET*/
@@ -545,12 +572,33 @@ filter: invert(100);
     font-weight: 700;
     color: black;
   }
-
+  .os-16 {
+    font-family: "Open Sans", sans-serif;
+    font-size: min(4vw, 20px);
+    font-weight: 700;
+    color: black;
+  }
 
   body.dark .os-20 {
     color: #fff;
   }
+}
 
+@media only screen and (max-width: 425px) {
+  .os-20 {
+    font-family: "Open Sans", sans-serif;
+    font-size: min(6vw, 30px);
+    font-weight: 700;
+    color: black;
+  }
+  .os-16 {
+    font-family: "Open Sans", sans-serif;
+    font-size: min(6vw, 26px);
+    font-weight: 700;
+    color: black;
+  }
 
-
+  body.dark .os-20 {
+    color: #fff;
+  }
 }
