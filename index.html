@@ -35,6 +35,8 @@
 	<link rel="stylesheet" href="css/skins/skin-digital-agency.css">
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
+
+		
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif;">
@@ -124,7 +126,7 @@
 			data-plugin-video-background data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}"
 			style="height: 95vh; background-color: black;">
 			<!--SLIDER-->
-			<div id="owl1" class="container owl-carousel owl-theme my-sm-auto max-w" data-plugin-options="{ 'animateOut': 'slideOutUp', 'animateIn':'slideInUp', 'autoplay':false, 'autoplayTimeout':3000, 'autoplayHoverPause': true, 
+			<div id="owl1" class="container owl-carousel owl-theme my-sm-auto max-w" data-plugin-options="{ 'animateOut': 'slideOutUp', 'animateIn':'slideInUp', 'autoplay':true, 'autoplayTimeout':3000, 'autoplayHoverPause': true, 
 				'autoplaySpeed':1000, 'dotsData': true, 'items': 1, 'margin': 100, 'loop': true,  'nav': false, 
 				'dots': true, 'stagePadding': 60,'autoHeight': false }">
 				<div class="text-sm-left pt-3 item" data-dot="<button class='btn-owl-dot' role='button'>01</button>">
@@ -157,18 +159,21 @@
 
 
 			</div>
+			<i class="chevron-down icon-down"></i>
 		</section>
 		<!--BODY MAIN-->
 		<div role="main" class="main max-w">
+
 			<!--SECCION 1-->
-			<div class="container mt-5 pt-5	sec-1" id="about-blend">
+			<div class="container mt-5	sec-1" id="about-blend">
 				<div class="col-md-12  text-center order-1 order-md-2 appear-animation"
 					data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
 					<br />
-					<h1>About Blend</h1><br />
+					<h1 class="os-20">About Blend</h1><br />
 					<!-- fondo oscuro letras claras  nav-light dots-light text-color-light -->
 					<div id="owl2" class="owl-carousel owl-theme"
-						data-plugin-options="{'items': 1, 'margin': 100, 'loop': true, 'nav': true, 'dots': true, 'stagePadding': 60, 'autoHeight': false}">
+						data-plugin-options="{'autoplay':true, 'autoplayTimeout':3000, 'autoplayHoverPause': true, 
+						'autoplaySpeed':1000, 'items': 1, 'margin': 100, 'loop': true, 'nav': true, 'dots': true, 'stagePadding': 60, 'autoHeight': false}">
 						<div class="text-center pt-4">
 							<label class="font-weight-normal text-3 px-lg-4 m-3">Professional Architects and Engineers
 								with
@@ -196,10 +201,10 @@
 				</div>
 			</div>
 			<!--SECCION 2-->
-			<div class="container mt-5 pt-5" id="why-blend">
+			<div class="container mt-5 " id="why-blend">
 				<div class="row">
-					<div class="col-sm-5 text-center py-sm-5 colapse-fix">
-						<h3>Why Blend</h3>
+					<div class="col-sm-5 text-center py-sm-5 colapse-fix justify-content-around">
+						<h3 class="mt-1 mb-3  os-20">Why Blend</h3>
 						<p>Currently, maintaining sustainable project results are
 							becoming increasingly difficult with risng costs and uncertainity in the market today.
 							Covering every cost
@@ -214,7 +219,7 @@
 					</div>
 					<div class="col-sm-7 colapse-col p-0">
 						<div class="colapse-side-left" id="colapse-side-left">
-							<div class="container side-left" >
+							<div class="container side-left">
 								<h3 class="text-center mt-5">Other possible reasons may be</h3>
 								<div class="row row-side">
 									<div class="col text-center">
@@ -237,9 +242,6 @@
 									</div>
 								</div>
 							</div>
-
-
-
 							<div class="toggle-colapse" id="toggle-colapse"><i class="colapse-icon"></i></div>
 						</div>
 						<div class="colapse-side-rigth" id="colapse-side-rigth"></div>
@@ -248,11 +250,9 @@
 					</div>
 				</div>
 			</div>
-
-
 			<!--SECCION 3-->
 			<div class="container-fluid my-5 py-5 px-0 sec-3" id="how-we-blend">
-				<h3 class="text-center">How we Blend</h3>
+				<h3 class="text-center mb-4 os-20">How we Blend</h3>
 				<div id="owl3" class="owl-carousel owl-theme"
 					data-plugin-options="{'items': 5, 'margin': 10, 'loop': false, 'nav': false, 'dots': false, 'stagePadding': 60, 'autoHeight': false}">
 					<div class="text-center pt-4">
@@ -304,11 +304,11 @@
 				</div>
 			</div>
 			<!--SECCION 4-->
-			<div class="container my-5 py-5  sec-4">
+			<div class="container my-5  sec-4">
 				<div class="row justify-content-around">
 					<div class="col-sm text-center pl-sm-5 ml-sm-5">
-						<h2>Blending is the best way</h2>
-						<h2>to get things done</h2>
+						<h2 class="os-20">Blending is the best way</h2>
+						<h2 class="os-20">to get things done</h2>
 						<button class="btn-sec4 btnd-degr mt-4">Check out the Blend approach</button>
 					</div>
 					<div class="col-sm my-auto text-center pr-sm-5 mr-sm-5">
@@ -321,8 +321,8 @@
 				</div>
 			</div>
 			<!--SECCION 5-->
-			<div class="container justify-content-around my-5 py-5 sec-5" id="service-blend">
-				<h3 class="text-center font-weight-bolder" style="font-family: 'Open Sans', sans-serif;">
+			<div class="container justify-content-around my-5 py-4 sec-5" id="service-blend">
+				<h3 class="text-center os-20 mb-5">
 					Services
 				</h3>
 				<div class="row">
@@ -376,80 +376,80 @@
 				</div>
 			</div>
 		</div>
-		<div class="container text-center">
+		<div class="container text-center mb-5 pb-5">
 			<br />
-			<h1 class="font-weight-bold h2">Sectors on which we can Blend with you</h1><br />
+			<h1 class="os-20 mb-4 pb-1">Sectors on which we can Blend with you</h1><br />
 			<div class="row justify-content-between px-3">
 				<div class="col-sm  p-0 gal">
 					<img class="img-gal" src="img/jpg/sector01.jpg">
-					<p class="m-0">Multifamily</p>
+					<p class="my-1">Multifamily</p>
 				</div>
 				<div class="col-sm  p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector02.jpg">
-					<p class="m-0">Single-Family</p>
+					<p class="my-1">Single-Family</p>
 				</div>
 				<div class="col-sm  p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector03.jpg">
-					<p class="m-0">Tenant Improvements</p>
+					<p class="my-1">Tenant Improvements</p>
 				</div>
 				<div class="col-sm  p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector04.jpg">
-					<p class="m-0">Mixed-use</p>
+					<p class="my-1">Mixed-use</p>
 				</div>
 			</div>
 			<div class="row justify-content-between px-3">
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector05.jpg">
-					<p class="m-0">Hospitality</p>
+					<p class="my-1">Hospitality</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector06.jpg">
-					<p class="m-0">Institutional</p>
+					<p class="my-1">Institutional</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector07.jpg">
-					<p class="m-0">Affordable Housing</p>
+					<p class="my-1">Affordable Housing</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector08.jpg">
-					<p class="m-0">Commercial</p>
+					<p class="my-1">Commercial</p>
 				</div>
 			</div>
 			<div class="row justify-content-between px-3">
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector09.jpg">
-					<p class="m-0">Medical</p>
+					<p class="my-1">Medical</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector10.jpg">
-					<p class="m-0">Senior Housing</p>
+					<p class="my-1">Senior Housing</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector11.jpg">
-					<p class="m-0">High-rise</p>
+					<p class="my-1">High-rise</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector12.jpg">
-					<p class="m-0">Goverment Projects</p>
+					<p class="my-1">Goverment Projects</p>
 				</div>
 
 			</div>
 			<div class="row justify-content-between px-3">
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector13.jpg">
-					<p class="m-0">Student Housing</p>
+					<p class="my-1">Student Housing</p>
 				</div>
 				<div class="col-sm p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector14.jpg">
-					<p class="m-0">Retail</p>
+					<p class="my-1">Retail</p>
 				</div>
 				<div class="col-sm  p-0 gal" style="text-align:center">
 					<img class="img-gal" src="img/jpg/sector15.jpg">
-					<p class="m-0">Restaurant F&B Service</p>
+					<p class="my-1">Restaurant F&B Service</p>
 				</div>
 				<div class="col-sm p-0 gal transparent" style="text-align:center">
 					<img class="img-gal" src="">
-					<p class="m-0"></p>
+					<p class="my-1"></p>
 				</div>
 			</div>
 		</div>
@@ -461,10 +461,9 @@
 				<div class="row py-0">
 					<div class="col-lg-6 mb-5 px-5 justify-content-around ">
 						<div class="mt-4">
-							<p class="lead mb-0 text-4 font-weight-lighter">Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit.
-								Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue
-								iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							<p class="lead mb-0 text-4 font-weight-lighter">Please feel free to contact us, we are available to review
+								your project’s needs and prepare a proposal tailored to
+								your particular requirements.
 							</p>
 						</div>
 						<div>
@@ -472,15 +471,17 @@
 								<li class="text-white d-flex py-1">
 									<span class="icon-mail "></span>
 									<span><a class="text-white "
-											href="mailto:mail@example.com">mail@example.com</a></span>
+											href="mailto:mail@example.com">info@blendaec.com</a></span>
 								</li>
 								<li class="text-white d-flex py-1">
 									<span class="icon-phon "></span>
-									<p>(123) 456-789</p>
+									<p>213.476.2252</p>
 								</li>
 								<li class="text-white d-flex py-1">
 									<span class="icon-loc"></span>
-									<p>1234 Street Name, City Name, United States</p>
+									<p>445 S. Figueroa St.
+										31st Floor
+										Los Angeles, CA, 90071</p>
 								</li>
 							</ul>
 						</div>
@@ -546,13 +547,8 @@
 	</div>
 
 	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h5 class="text-3 mb-0 text-dark text-center">BLEND</h5>
-				</div>
-			</div>
-		</div>
+					<img class="logo-footer" src="./img/svg/logo-blend-gris.svg" alt="">
+				
 	</footer>
 	</div>
 
@@ -578,6 +574,7 @@
 
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 	<!-- Current Page Vendor and Views -->
 	<script src="js/views/view.contact.js"></script>
@@ -594,18 +591,6 @@
 
 	<script src="./js/index.js"></script>
 
-
-	<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-12345678-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		 -->
 
 
 </body>

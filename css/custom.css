@@ -4,7 +4,30 @@
   --background-dark: #14171d;
   --background-white: #f2f2f2;
 }
-
+html .scroll-to-top.visible {
+  opacity: 0.75;
+}
+html .scroll-to-top {
+  transition: opacity 0.3s;
+  background: #404040;
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  color: #FFF;
+  display: block;
+  height: 9px;
+  opacity: 0;
+  padding: 10px 10px 35px;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 50px;
+  z-index: 1040;
+  font-size: 0.8em;
+}
+.visible {
+  visibility: visible!important;
+}
 .max-w {
   max-width: 1240px;
   margin-left: auto;
@@ -92,12 +115,24 @@ button:focus {
   color: aqua;
 }
 
+.chevron-down {
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../img/svg/arrow-colapse-dark.svg");
+  transform: rotate(90deg);
+  filter: invert(50);
+  background-repeat: no-repeat;
+  background-size: 35px 25px;
+  width: 35px;
+  height: 40px;  
+}
+
 /*SECCION 1 - ACORDEON*/
 .sec-1 {
   background-image: url("../img/svg/logo-b-background.svg");
   background-repeat: no-repeat;
   background-position: 10% 100%;
-  background-size: 11%;
+  background-size: 13%;
 }
 body.dark .sec-1 {
   background-image: url("../img/svg/logo-b-background-dark.svg");
@@ -131,7 +166,7 @@ body.dark .colapse-fix p {
     position: absolute;
     background: url("../img/jpg/colapse-background.jpg");
     background-size: cover;
-    background-position: 50px -20px;
+    background-position: 50px -15px;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -263,7 +298,6 @@ body.dark .colapse-fix p {
   margin-bottom: 10%;
 }
 
-
 .side-left {
   height: 100%;
   margin-left: auto;
@@ -383,12 +417,7 @@ body.dark .sec-4 div div p {
   }
 }
 
-/*FUENTES Y TAMAÑOS*/
-/*ESCRITORIO Y TABLET*/
-@media only screen and (min-width: 425px) {
-  .os-16 {
-  }
-}
+
 
 /*GALERIA DE IMAGENES*/
 @media only screen and (max-width: 425px) {
@@ -490,4 +519,38 @@ input:-webkit-autofill:active {
   background: url("../img/jpg/footer-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#footer {
+  height: 30px;
+}
+
+.logo-footer {
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height:80%;
+filter: invert(100);
+}
+
+
+/*FUENTES Y TAMAÑOS*/
+/*ESCRITORIO Y TABLET*/
+@media only screen and (min-width: 425px) {
+  .os-20 {
+    font-family: "Open Sans", sans-serif;
+    font-size: min(4vw, 26px);
+    font-weight: 700;
+    color: black;
+  }
+
+
+  body.dark .os-20 {
+    color: #fff;
+  }
+
+
+
 }
