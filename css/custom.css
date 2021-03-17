@@ -503,6 +503,18 @@ body.dark .sec-4 div div p {
 .transparent {
   background: transparent !important;
 }
+@media only screen and (min-width: 425px) {
+  .gal {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gal {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 .gal {
   margin-bottom: 20px;
   border-radius: 6px;
