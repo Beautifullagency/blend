@@ -55,7 +55,24 @@ button:focus {
 .logo-nav {
   width: 60%;
 }
-
+#header .header-nav-main.header-nav-main-mobile-dark:before {
+  background-color: #212529b6;
+}
+@media (max-width: 991px) {
+  html.sticky-header-active #header.header-transparent .header-nav-main nav {
+    padding: 0 15px 0px 15px;
+  }
+}
+#mainNav {
+  border-radius: 8px;
+}
+@media (max-width: 991px){
+#header .header-nav-main nav > ul {
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+    
+}
+}
 @media only screen and (max-width: 425px) {
   .logo-nav {
     width: 40% !important;
@@ -105,7 +122,7 @@ button:focus {
   height: 15px;
   position: absolute;
   background: #f1f1f1;
-  top: -1px;
+  top: 0px;
   left: 0;
   right: unset;
   border-radius: 100px;
@@ -155,6 +172,29 @@ button:focus {
 body.dark .sec-1 {
   background-image: url("../img/svg/logo-b-background-dark.svg");
 }
+@media only screen and (max-width: 769px) {
+  .sec-1 {
+  background-image: url("../img/svg/logo-b-background.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  background-size: 20%;
+}
+}
+@media only screen and (max-width: 425px) {
+  .sec-1 {
+  background-image: url("../img/svg/logo-b-background.svg");
+  background-repeat: no-repeat;
+  background-position: -10% 60%;
+  background-size: 40%;
+}
+}
+
+
+
+.owl-prev span {
+  color: #000000;
+  height: 40px;
+}
 
 /*SECCION 2 - ACORDEON*/
 .colapse-fix {
@@ -175,6 +215,7 @@ body.dark .colapse-fix p {
   transition: 0.7s ease all;
 }
 
+
 @media only screen and (min-width: 426px) {
   .colapse-col {
     display: flex;
@@ -184,7 +225,7 @@ body.dark .colapse-fix p {
     position: absolute;
     background: url("../img/jpg/colapse-background.jpg");
     background-size: cover;
-    background-position: 50px -15px;
+    background-position: 50px 0px;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -264,7 +305,7 @@ body.dark .colapse-fix p {
     background: url("../img/jpg/colapse-background-mobil.jpg");
     background-size: cover;
     background-position: 0px 2px;
-    height: 540px;
+    height: 460px;
     width: 90%;
     z-index: 1;
     border-radius: 0 0px 10px 10px;
@@ -281,7 +322,7 @@ body.dark .colapse-fix p {
     border-radius: 0 0px 10px 10px;
   }
   .colapse-side-left-active {
-    height: 541px;
+    height: 510px;
   }
   .toggle-colapse {
     position: relative;
@@ -330,7 +371,11 @@ body.dark .colapse-fix p {
   opacity: 1;
   transition: opacity 0.7s linear;
 }
+.col-left p , .col-rigth p{
+  line-height: 1.5;
+  margin-bottom: 15px;
 
+}
 /*SECCION 3  CAROUSEL*/
 .sec-3 {
   background-repeat: no-repeat;
@@ -428,9 +473,9 @@ body.dark .sec-4 div div p {
 }
 
 /*SECCION 5*/
-.services{
+.services {
   padding-right: 5px;
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -445,6 +490,11 @@ body.dark .sec-4 div div p {
 }
 
 /*GALERIA DE IMAGENES*/
+@media only screen and (max-width: 321px) {
+  .gal {
+    width: 48% !important;
+  }
+}
 @media only screen and (max-width: 425px) {
   .gal {
     width: 41%;
@@ -455,8 +505,6 @@ body.dark .sec-4 div div p {
 }
 .gal {
   margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
   border-radius: 6px;
   background-color: #fff;
   text-align: center;
