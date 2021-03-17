@@ -51,6 +51,9 @@ button:focus {
 }
 
 /*MENU*/
+.fa-moon {
+  color: #000000;
+}
 
 .logo-nav {
   width: 60%;
