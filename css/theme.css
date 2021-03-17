@@ -61,7 +61,7 @@ li {
 #header .header-body {
   display: flex;
   flex-direction: column;
-  background-color: rgba(68, 68, 68, 0.4) !important;
+  background-color: rgba(8, 8, 8, 0.952) !important;
   transition: min-height 0.3s ease;
   width: 100%;
   border-top: 3px solid #ededed;
