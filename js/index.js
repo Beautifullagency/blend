@@ -50,12 +50,12 @@ $("#owl2").owlCarousel({
     600: {
       margin: 60,
       items: 1,
-      nav: false,
+      nav: true,
     },
     1024: {
       margin: 60,
       items: 1,
-      nav: false,  
+      nav: true,  
       loop: false
     },
   },
