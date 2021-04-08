@@ -35,8 +35,8 @@ $("#owl2").owlCarousel({
   autoplay: false,
   autoplayTimeout: 3000,
   autoplayHoverPause: true,
-  autoplaySpeed: 1000, 
-  items: 1, 
+  autoplaySpeed: 1000,
+  items: 1,
   loop: true,
   dots: true,
   autoHeight: false,
@@ -55,24 +55,47 @@ $("#owl2").owlCarousel({
     1024: {
       margin: 60,
       items: 1,
-      nav: true,  
-      loop: false
+      nav: true,
+      loop: false,
     },
   },
 });
 
-/*
+/*MENU - COLOR DE LINKS*/
 
+let links = document.getElementsByClassName("menuLink");
 
-{'autoplay':false,
- 'autoplayTimeout':3000, 
- 'autoplayHoverPause': true,
- 'autoplaySpeed':1000,
-  'items': 1,
- 'margin': 60,
-'loop': true,
-'nav': true,
-'dots': true,
-'stagePadding': 60,
-'autoHeight': false
-}*/
+let node = [...links];
+
+node.forEach((e) => {
+  e.addEventListener("click", () => {
+    node.forEach((e) => {
+      e.classList.remove("active");
+    });
+    e.classList.add("active");
+  });
+});
+
+$(document).ready(function () {
+  var section1 = $("#about-blend").offset().top;
+  var section2 = $("#why-blend").offset().top;
+  var section3 = $("#how-we-blend").offset().top;
+  var section4 = $("#service-blend").offset().top;
+  var section5 = $("#contact-blend").offset().top;
+
+  $(window).scroll(function () {   
+    $(".titulo-nav").each(function () {
+      let offset = $(this);
+      if ($(window).scrollTop() > offset.offset().top - 50) {
+         $('.menuLink').each(function() {
+          if ($(this)[0].dataset.name === offset[0].id){
+             $('.menuLink').each(function(){
+              this.classList.remove("active")
+             })
+             this.classList.add("active")
+          } 
+        });       
+      }
+    });
+  });
+});

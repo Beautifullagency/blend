@@ -268,6 +268,8 @@ body.dark .colapse-fix p {
   }
 
   .colapse-side-rigth {
+    display: flex;
+    align-items: center;
     position: absolute;
     background: url("../img/jpg/colapse-background.jpg");
     background-size: cover;
@@ -276,6 +278,12 @@ body.dark .colapse-fix p {
     width: 100%;
     z-index: 1;
     border-radius: 0 10px 10px 0;
+  }
+  .colapse-side-rigth h2 {
+
+    margin: 0 0 0 70px;
+    color: #fff;
+
   }
   body.dark .colapse-side-rigth {
     background: url("../img/jpg/colapse-background-dark.jpg");
@@ -314,7 +322,7 @@ body.dark .colapse-fix p {
     background-repeat: no-repeat;
     background-size: 15px 20px;
     width: 18px;
-    height: 40px;
+    height: 20px;
     transition: 1s linear all;
   }
   .colapse-icon-active {
@@ -369,6 +377,15 @@ body.dark .colapse-fix p {
   }
   .colapse-side-left-active {
     height: 510px;
+  }
+
+
+  .colapse-side-rigth h2 {
+    padding-top: 100px;
+    margin: 0 20px 0 20px ;
+    color: #fff;
+    text-align: center ;
+
   }
   .toggle-colapse {
     position: relative;
@@ -656,7 +673,7 @@ input:-webkit-autofill:active {
 }
 
 #footer {
-  height: 30px;
+  height: 40px;
 }
 
 .logo-footer {
@@ -665,7 +682,7 @@ input:-webkit-autofill:active {
   margin-top: auto;
   margin-bottom: auto;
   width: 100%;
-  height: 80%;
+  height: 90%;
   filter: invert(100);
 }
 
