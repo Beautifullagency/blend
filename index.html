@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
 	<!-- Basic -->
@@ -501,14 +501,7 @@
 					</div>
 
 					<div class="col-lg-6 mb-5 px-5">
-						<form class="contact-form" action="php/contact-form.php" method="POST">
-							<div class="contact-form-success alert alert-success d-none mt-4">
-								<strong>Success!</strong> Your message has been sent to us.
-							</div>
-							<div class="contact-form-error alert alert-danger d-none mt-4">
-								<strong>Error!</strong> There was an error sending your message.
-								<span class="mail-error-message text-1 d-block"></span>
-							</div>
+						<form class="contact-form" id="formulario-contacto" role="form" autocomplete="on" method="post">
 							<div class="form-row">
 								<div class="form-group col">
 									<label class="required text-2 m-0" style="color: #97CCE9;">Name</label>
@@ -520,18 +513,17 @@
 							<div class="form-row">
 								<div class="form-group col">
 									<label class="required  text-2" style="color: #97CCE9;">E-mail</label>
-									<input type="email" placeholder="Your email (required)" value=""
-										data-msg-required="Please enter your email address."
-										data-msg-email="Please enter a valid email address." maxlength="100"
+									<input type="email" placeholder="Your email (required)" value="" maxlength="100"
 										class="form-control" name="email" required>
+										<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col">
 									<label class="text-2" style="color: #97CCE9;">Phone</label>
-									<input type="text" placeholder="Your phone (required)" value=""
-										data-msg-required="Please enter the subject." maxlength="100"
-										class="form-control" name="subject" required>
+									<input type="text" placeholder="Your phone (required)" value="" maxlength="100"
+										class="form-control" name="phone" required>
+										<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
@@ -540,11 +532,12 @@
 									<textarea maxlength="5000" placeholder="Your Message (required)"
 										data-msg-required="Please enter your message." rows="8" class="form-control"
 										name="message" required></textarea>
+										<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
 								<div class="form-group col">
-									<input type="submit" value="Send" class="btn btnd-degr"
+									<input type="submit" class="btn btnd-degr"
 										style="border-radius: 20px; padding: 1px 40px 1px 40px;"
 										data-loading-text="Loading...">
 								</div>
@@ -580,8 +573,8 @@
 	<!-- Theme Base, Components and Settings -->
 	<script src="js/theme.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<!-- Current Page Vendor and Views -->
-	<script src="js/views/view.contact.js"></script>
+	<!-- Current Page Vendor and Views 
+	<script src="js/views/view.contact.js"></script>-->
 	<!-- Current Page Vendor and Views -->
 	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

@@ -18,7 +18,7 @@ $('document').ready(function () {
   })
   $('#formulario-contacto').validate({
     rules: {
-      nombre: {
+      name: {
         required: true,
         minlength: 8,
       },
@@ -30,14 +30,14 @@ $('document').ready(function () {
         required: true,
         validnumber: true,
       },
-      mensaje: {
+      message: {
         required: true,
         minlength: 20,
         maxlength: 300,
       },
     },
     messages: {
-      nombre: {
+      name: {
         required: 'Tu Nombre y Apellidos son Importantes',
         minlength: 'Tu Nombre es demasiado corto',
       },
@@ -49,7 +49,7 @@ $('document').ready(function () {
         required: 'Por Favor, introduzca un teléfono',
         validnumber: 'Introduzca solo numeros en el telefono',
       },
-      mensaje: {
+      message: {
         required: 'Tu Nombre y Apellidos son Importantes',
         minlength: 'Tu Mensaje es demasiado corto',
         maxlength: 'Tu Mensaje supera los 300 caracteres',
