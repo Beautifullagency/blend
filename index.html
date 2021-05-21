@@ -35,6 +35,8 @@
 	<link rel="stylesheet" href="css/skins/skin-digital-agency.css">
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body style="font-family: 'Open Sans', sans-serif;">
@@ -126,7 +128,7 @@
 		<!--HERO-->
 		<!--VIDEO-->
 		<section class="section border-0 video overlay-op-8  v-align vid" data-video-path="video/presentation"
-			data-plugin-video-background data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}"
+			data-plugin-video-background data-plugin-options="{'posterType': 'mp4', 'position': '50% 50%'}"
 			style="height: 97vh; background-color: black;">
 			<!--SLIDER-->
 			<div id="owl1" class="container owl-carousel owl-theme  max-w" data-plugin-options="{ 'animateOut': 'slideOutUp', 'animateIn':'slideInUp', 'autoplay':true, 'autoplayTimeout':4000, 'autoplayHoverPause': true, 
@@ -535,6 +537,7 @@
 										<span id="error" class="help-block"></span>
 								</div>
 							</div>
+							<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 							<div class="form-row">
 								<div class="form-group col">
 									<input type="submit" class="btn btnd-degr"
@@ -584,6 +587,7 @@
 	<script src="js/theme.init.js"></script>
 	<script src="./js/index.js"></script>
 	<script src="./js/validator.js"></script>
+	
 </body>
 
 </html>
