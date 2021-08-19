@@ -36,10 +36,12 @@
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
 
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<!-- Recapcha-->
+	<script src="https://www.google.com/recaptcha/api.js?render=6LcIyLYbAAAAABuraion0HLrDSe3_GEOLfWG6vLu"></script>
 </head>
 
-<body style="font-family: 'Open Sans', sans-serif;">
+<body id="home" style="font-family: 'Open Sans', sans-serif;">
 	<div class="body">
 		<!--MENU-->
 		<header id="header"
@@ -90,15 +92,23 @@
 													</a>
 												</li>
 												<li>
+													<a class="nav-link menuLink" href="#about-us"
+														data-name="contact-blend">
+														About Us
+													</a>
+												</li>
+												<li>
 													<a class="nav-link menuLink" href="#contact-blend"
 														data-name="contact-blend">
 														Contact Us
 													</a>
 												</li>
 												<li>
-													<a class="nav-link menuLink" href="#">
+													<a class="nav-link menuLink" data-toggle="modal"
+														data-target="#exampleModal" href="#">
 														Jobs Opportunities
 													</a>
+
 												</li>
 												<li>
 													<a class="nav-switch-container nav-link">
@@ -125,6 +135,107 @@
 				</div>
 			</div>
 		</header>
+		<!-- Button trigger modal -->
+
+		<!-- Modal job opportunities -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content ">
+					<div class="">
+						<h5 class="color text-center os-20 mb-3 mt-5 text-white" id="exampleModalLabel">Our jobs
+							Opportunities</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body d-flex flex-column">
+						<div id="owl3" class="container owl-carousel owl-theme  max-w">
+							<div class="item">
+								<img src="./img/slide/head01.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="./img/slide/head02.jpg" alt="">
+							</div>
+						</div>
+
+						<h2 class="os-20 mb-3 text-center text-white">Leave your <br> cv in our database</h2>
+						<div class="container">
+							<form class="contact-form-jobs mx-auto" id="formulario-contacto2" role="form"
+								autocomplete="on" method="post" enctype="multipart/form-data">
+								<input class="d-none" type="text" name="titulo" id="inp-titulo" value="jobs" />
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="required text-2 m-0" style="color: #97CCE9;">Name</label>
+										<input type="text" placeholder="Your Name (required)" value=""
+											data-msg-required="Please enter your name." maxlength="100"
+											class="form-control" name="name" required>
+										<span id="error" class="help-block"></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="required text-2 m-0" style="color: #97CCE9;">Surname</label>
+										<input type="text" placeholder="Your Surname (required)" value=""
+											data-msg-required="Please enter your name." maxlength="100"
+											class="form-control" name="surname" required>
+										<span id="error" class="help-block"></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="required  text-2" style="color: #97CCE9;">E-mail</label>
+										<input type="email" placeholder="Your email (required)" value="" maxlength="100"
+											class="form-control" name="email" required>
+										<span id="error" class="help-block"></span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="required text-2 m-0" style="color: #97CCE9;">Subject</label>
+										<input type="text" placeholder="Your subject or job(required)" value=""
+											data-msg-required="Please enter your subject." maxlength="100"
+											class="form-control" name="subject" required>
+										<span id="error" class="help-block"></span>
+									</div>
+								</div>
+								<div class="form-group mb-2">
+									<div class="invoiceBox">
+										<label for="file">
+											<div class="boxFile" data-text="Adjuntá tu CV">
+												Attach your cv
+											</div>
+										</label>
+										<input id="file" multiple="false" name="file" size="8000" type="file"
+											accept="application/pdf,application/docx" required>
+										<span id="error" class="help-block"></span>
+									</div>
+								</div>
+								<div class="form-group mb-2">
+									<label class="m-14" for="">Presentation</label>
+									<textarea class="" rows="14" name="message"
+										placeholder="your presentation"></textarea>
+									<span id="error" class="help-block"></span>
+								</div>
+
+								<div class="form-row">
+									<div class="form-group col">
+										<button type="submit" class="btn btnd-degr"
+											style="border-radius: 20px; padding: 1px 40px 1px 40px;"
+											data-loading-text="Loading...">Send</button>
+									</div>
+								</div>
+								<input type="hidden" name="token" id="google-response-2">
+							</form>
+						</div>
+						<button type="button" class="btnd-close ml-auto mr-0" data-dismiss="modal">Close</button>
+					</div>
+					<footer id="footer">
+						<img class="logo-footer" src="./img/svg/logo-blend-gris.svg" alt="">
+					</footer>
+				</div>
+			</div>
+		</div>
 		<!--HERO-->
 		<!--VIDEO-->
 		<section class="section border-0 video overlay-op-8  v-align vid" data-video-path="video/presentation"
@@ -229,7 +340,7 @@
 										<p>All professionals with US AEC
 											market understanding.</p>
 										<p>Looking to keep your office square
-											 footage small while increasing production output</p>
+											footage small while increasing production output</p>
 									</div>
 									<div class="col text-center col-rigth">
 										<p>We share the same culture.</p>
@@ -317,7 +428,8 @@
 					flex-direction: column;">
 						<h2 class="os-20">Blending is the best way</h2>
 						<h2 class="os-20">to get things done</h2>
-						<a href="./vendor/Blend-Value.pdf" download="Blend_approach.pdf"><button class="btn-sec4 btnd-degr mt-4">Check out the Blend approach</button></a>
+						<a href="./vendor/Blend-Brochure.pdf" download="Blend-Brochure.pdf"><button
+								class="btn-sec4 btnd-degr mt-4">Check out the Blend approach</button></a>
 					</div>
 					<div class="col-sm my-auto text-center pr-lg-5 mr-lg-5" style="    
 					justify-content: center;
@@ -387,6 +499,105 @@
 					<div class="col-sm-3 services">
 						<button type="button" class="btnd btnd-degr btn-sm btn-sec5">Clash Detection</button>
 					</div>
+				</div>
+			</div>
+
+			<!--SECCION 5-->
+			
+			<span id="about-us" class="titulo-nav"></span>
+			<div class="container justify-content-around space sec-5">
+				<h3 class="text-center os-20 mb-5">
+					About Us
+				</h3>
+				<div class="text-center">
+					<p class="mo-14 w-75 mx-auto mb-3 text-center mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+					<div class="row">
+						<div class="col-sm d-flex flex-column card-sec5">
+							<div>
+								<img class="my-3 img-sec5" src="./img/PabloLempert-05.jpg" alt="">
+								<p class="mo-20 mb-0 text-center mb-3 font-weight-bolder">Pablo D. Lempert</p>
+								<p class="mo-14 mb-0 text-center mb-3 ">Pablo is the Director of Operations at Blend
+									AEC, he leads the production team and manages the projects that go through the
+									company. In 2003 he graduated with a degree in Architecture and in 2020 he was
+									certified as PMP® by the Project Management Institute.
+
+									His talent has led him to collaborate with major clients, including resorts in Las
+									Vegas, the Caribbean and Dubai. His wide range of experience in large-scale
+									multi-family and hotel projects led him to move to Panama for 7 years, where he
+									managed and coordinated one of the largest architectural projects in Central
+									America.</p>
+								<a href="#">
+									<button class="btn-in btnd-degr mt-auto mb-0 mx-auto">
+										<img class="mx-2" src="../img/nosotros/logo-linkedin.svg" alt="">
+										<span>Ver en Linkedin</span>
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="col-sm d-flex flex-column card-sec5">
+							<img class="my-3 img-sec5" src="./img/Michel-G.-Hebrant.jpg" alt="">
+							<p class="mo-20 mb-0 text-center mb-3 font-weight-bolder">Michel Hebrant</p>
+							<p class="mo-14 mb-0 text-center mb-3 ">Michel Hebrant holds a B.A. in Arts and Architecture
+								from the School of Architecture and Urban Planning at the University of Washington,
+								Seattle.
+
+								He has a vast experience in multicultural expositions, which is why he has participated
+								as a speaker at several different meetings. With nearly 25 years of experience bridging
+								relationships globally in real estate, Michel is a Principal at Blend AEC Solutions and
+								serves as our Growth Director.</p>
+							<a class="mt-auto mb-0" href="#">
+								<button class="btn-in btnd-degr ">
+									<img class="mx-2" src="../img/nosotros/logo-linkedin.svg" alt="">
+									<span>Ver en Linkedin</span>
+								</button>
+							</a>
+						</div>
+						<div class="col-sm d-flex flex-column card-sec5">
+							<img class="my-3 img-sec5" src="./img/MartinLopez-05.jpg" alt="">
+							<p class="mo-20 mb-0 text-center mb-3 font-weight-bolder">Martín R. López</p>
+							<p class="mo-14 mb-0 text-center mb-3 ">Martín is an architect and the Executive Director of
+								Blend AEC.
+								His international career began in 2006 in an architecture studio in the city of Córdoba,
+								Argentina. Later he became the Executive Director of Public Buildings of Córdoba City
+								Council for 4 years, at the same time that he began to teach History of Architecture at
+								the local National University. Martín also writes articles on topics that are related to
+								the production of architecture in Latin America and are published in various digital and
+								print media.</p>
+							<a class="mt-auto mb-0" href="#">
+								<button class="btn-in btnd-degr ">
+									<img class="mx-2" src="../img/nosotros/logo-linkedin.svg" alt="">
+									<span>Ver en Linkedin</span>
+								</button>
+							</a>
+						</div>
+						<div class="col-sm d-flex flex-column card-sec5">
+							<img class="my-3 img-sec5" src="./img/JeffBymaster-02.jpg" alt="">
+							<p class="mo-20 mb-0 text-center mb-3 font-weight-bolder">Jeffrey Bymaster</p>
+							<p class="mo-14 mb-0 text-center mb-3 ">Jeff Bymaster has a BA in Architecture from Woodbury
+								University - School of Architecture (Burbank, CA). He also participated in the Study
+								Abroad Program, attending Design and Urban Planning Study Courses in Barcelona, Spain
+								and in Paris, France.
+
+								As one of the directors of Blend AEC Solutions, his primary responsibility is to develop
+								new business relationships and continue to nurture the existing relationships that we
+								have.
+
+								Jeff has had a great career path, where he has participated in various projects ranging
+								from small commercial buildings to high-rise towers.</p>
+							<a class="mt-auto mb-0" href="#">
+								<button class="btn-in btnd-degr  ">
+									<img class="mx-2" src="../img/nosotros/logo-linkedin.svg" alt="">
+									<span>Ver en Linkedin</span>
+								</button>
+							</a>
+						</div>
+
+					</div>
+
+
+
+
+
 				</div>
 			</div>
 		</div>
@@ -503,13 +714,16 @@
 					</div>
 
 					<div class="col-lg-6 mb-5 px-5">
-						<form class="contact-form" id="formulario-contacto" role="form" autocomplete="on" method="post">
+						<form class="contact-form" id="formulario-contacto1" role="form" autocomplete="on"
+							method="post">
+							<input class="d-none" type="text" name="titulo" id="inp-titulo" value="Consulta web" />
 							<div class="form-row">
 								<div class="form-group col">
 									<label class="required text-2 m-0" style="color: #97CCE9;">Name</label>
 									<input type="text" placeholder="Your Name (required)" value=""
 										data-msg-required="Please enter your name." maxlength="100" class="form-control"
 										name="name" required>
+									<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
@@ -517,7 +731,7 @@
 									<label class="required  text-2" style="color: #97CCE9;">E-mail</label>
 									<input type="email" placeholder="Your email (required)" value="" maxlength="100"
 										class="form-control" name="email" required>
-										<span id="error" class="help-block"></span>
+									<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
@@ -525,7 +739,7 @@
 									<label class="text-2" style="color: #97CCE9;">Phone</label>
 									<input type="text" placeholder="Your phone (required)" value="" maxlength="100"
 										class="form-control" name="phone" required>
-										<span id="error" class="help-block"></span>
+									<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="form-row">
@@ -534,17 +748,18 @@
 									<textarea maxlength="5000" placeholder="Your Message (required)"
 										data-msg-required="Please enter your message." rows="8" class="form-control"
 										name="message" required></textarea>
-										<span id="error" class="help-block"></span>
+									<span id="error" class="help-block"></span>
 								</div>
 							</div>
 							<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 							<div class="form-row">
 								<div class="form-group col">
-									<input type="submit" class="btn btnd-degr"
+									<button type="submit" class="btn btnd-degr"
 										style="border-radius: 20px; padding: 1px 40px 1px 40px;"
-										data-loading-text="Loading...">
+										data-loading-text="Loading...">Send</button>
 								</div>
 							</div>
+							<input type="hidden" name="token" id="google-response-1">
 						</form>
 
 					</div>
@@ -581,13 +796,15 @@
 	<!-- Current Page Vendor and Views -->
 	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="./js/index.js"></script>
 	<!-- Theme Custom -->
 	<script src="js/custom.js"></script>
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
-	<script src="./js/index.js"></script>
+
 	<script src="./js/validator.js"></script>
-	
+	<script src="./js/validator2.js"></script>
+
 </body>
 
 </html>

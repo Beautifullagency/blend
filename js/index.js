@@ -61,6 +61,34 @@ $("#owl2").owlCarousel({
   },
 });
 
+$("#owl3").owlCarousel({
+  autoplay: false,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  autoplaySpeed: 1000,
+  loop: true,
+  dots: true,
+  autoHeight: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      margin: 10,
+      items: 1,
+      nav: false,
+    },
+    600: {
+      margin: 60,
+      items: 1,
+      nav: true,
+    },
+    1024: {
+      margin: 60,
+      items: 1,
+      nav: true,
+      loop: false,
+    },
+  },
+});
 /*MENU - COLOR DE LINKS*/
 
 let links = document.getElementsByClassName("menuLink");
@@ -99,3 +127,5 @@ $(document).ready(function () {
     });
   });
 });
+
+

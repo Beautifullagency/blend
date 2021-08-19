@@ -1,6 +1,11 @@
+grecaptcha.ready(function () {
+  grecaptcha.execute('6LcIyLYbAAAAABuraion0HLrDSe3_GEOLfWG6vLu', { action: 'homepage' }).then(function (token) {
+    // Add your logic to submit to your backend server here.
+    $('#google-response-1').val(token)
+  });
+});
+
 $('document').ready(function () {
-
-
   // Validación para campos de texto exclusivo, sin caracteres especiales ni números
   var nameregex = /^[a-zA-Z ]+$/
   $.validator.addMethod('validname', function (value, element) {
@@ -16,7 +21,7 @@ $('document').ready(function () {
   $.validator.addMethod('validnumber', function (value, element) {
     return this.optional(element) || phoneregex.test(value)
   })
-  $('#formulario-contacto').validate({
+  $('#formulario-contacto1').validate({
     rules: {
       name: {
         required: true,
@@ -38,21 +43,21 @@ $('document').ready(function () {
     },
     messages: {
       name: {
-        required: 'Tu Nombre y Apellidos son Importantes',
-        minlength: 'Tu Nombre es demasiado corto',
+        required: 'Your Name and Surname are Important',
+        minlength: 'Your name is too short',
       },
       email: {
-        required: 'Por Favor, introduzca una dirección de correo',
-        validemail: 'Introduzca correctamente su ',
+        required: 'Please enter an email address',
+        validemail: 'Enter your email correctly',
       },
       phone: {
         required: 'Por Favor, introduzca un teléfono',
         validnumber: 'Introduzca solo numeros en el telefono',
       },
       message: {
-        required: 'Tu Nombre y Apellidos son Importantes',
-        minlength: 'Tu Mensaje es demasiado corto',
-        maxlength: 'Tu Mensaje supera los 300 caracteres',
+        required: 'Your message is important',
+        minlength: 'Your message is too short. Minimum length 20 characters ar required.',
+        maxlength: 'Your message exceeds 300 characters',
       },
     },
     errorPlacement: function (error, element) {
@@ -72,9 +77,15 @@ $('document').ready(function () {
       $(element).closest('.form-group').find('.help-block').html('')
     },
     submitHandler: function (form) {
-      form.action = '../enviar.php'
-      form.submit()
-      alert('Formulario enviado correctamente')
+
+      
+          form.action = './enviar.php'
+          form.submit()
+          alert('Formulario de contacto enviado correctamente')
+    
+
+      
+      
     },
   })
 })
