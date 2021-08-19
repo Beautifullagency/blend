@@ -76,6 +76,7 @@ button:focus {
   }
 }
 @media only screen and (max-width: 425px) {
+ 
   .logo-nav {
     width: 40% !important;
   }
@@ -552,6 +553,11 @@ body.dark .sec-4 div div p {
   }
 }
 @media only screen and (max-width: 425px) {
+  .img-sec5 {
+    margin: auto auto;
+  width: 60% !important;
+  height: 200px;
+  }
   .gal {
     width: 41%;
   }
@@ -564,6 +570,7 @@ body.dark .sec-4 div div p {
     margin-right: 20px;
     margin-left: 20px;
   }
+  
 }
 @media only screen and (min-width: 768px) {
   .gal {
@@ -798,7 +805,7 @@ input:-webkit-autofill:active {
 background-color: #fff;
 box-shadow: 0px 5px 36px #00000029;
 border-radius: 8px;
-margin-right: 20px;
+margin:20px  20px;
 }
 .img-sec5 {
   margin: auto auto;
